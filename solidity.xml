@@ -80,36 +80,58 @@ seconds minutes hours days weeks years
         </KeywordLists>
 
         <Styles>
-            <WordsStyle name="DEFAULT" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Default -->
+    <WordsStyle name="DEFAULT" fgColor="EAEAEA" bgColor="1E1E1E" fontStyle="0"/>
 
-            <WordsStyle name="COMMENTS" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="LINE COMMENTS" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Comments -->
+    <WordsStyle name="COMMENTS" fgColor="57A64A" bgColor="1E1E1E" fontStyle="2"/>
+    <WordsStyle name="LINE COMMENTS" fgColor="57A64A" bgColor="1E1E1E" fontStyle="2"/>
 
-            <WordsStyle name="NUMBERS" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Numbers -->
+    <WordsStyle name="NUMBERS" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="1"/>
 
-            <WordsStyle name="KEYWORDS1" fgColor="569CD6" bgColor="1E1E1E" fontStyle="1"/>
-            <WordsStyle name="KEYWORDS2" fgColor="C586C0" bgColor="1E1E1E" fontStyle="1"/>
-            <WordsStyle name="KEYWORDS3" fgColor="569CD6" bgColor="1E1E1E" fontStyle="1"/>
-            <WordsStyle name="KEYWORDS4" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
-            <WordsStyle name="KEYWORDS5" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
+    <!-- Structure (contract, pragma, import, etc.) -->
+    <WordsStyle name="KEYWORDS1" fgColor="C586C0" bgColor="1E1E1E" fontStyle="1"/>
 
-            <WordsStyle name="KEYWORDS6" fgColor="D7BA7D" bgColor="1E1E1E" fontStyle="1"/>
-            <WordsStyle name="KEYWORDS7" fgColor="DCDCAA" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="KEYWORDS8" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Flow / control / function -->
+    <WordsStyle name="KEYWORDS2" fgColor="569CD6" bgColor="1E1E1E" fontStyle="1"/>
 
-            <WordsStyle name="OPERATORS" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Visibility / mutability -->
+    <WordsStyle name="KEYWORDS3" fgColor="FF8C00" bgColor="1E1E1E" fontStyle="1"/>
 
-            <WordsStyle name="FOLDER IN CODE1" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="FOLDER IN COMMENT" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
+    <!-- Types -->
+    <WordsStyle name="KEYWORDS4" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
 
-            <WordsStyle name="DELIMITERS1" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS2" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS3" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS4" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS5" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS6" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS7" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-            <WordsStyle name="DELIMITERS8" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
-        </Styles>
+    <!-- Custom (unused) -->
+    <WordsStyle name="KEYWORDS5" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
+
+    <!-- TODO -->
+    <WordsStyle name="KEYWORDS6" fgColor="FF5555" bgColor="1E1E1E" fontStyle="1"/>
+
+    <!-- Builtins / globals -->
+    <WordsStyle name="KEYWORDS7" fgColor="DCDCAA" bgColor="1E1E1E" fontStyle="1"/>
+
+    <!-- Units -->
+    <WordsStyle name="KEYWORDS8" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="1"/>
+
+    <!-- Operators -->
+    <WordsStyle name="OPERATORS" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="1"/>
+
+    <!-- Folding -->
+    <WordsStyle name="FOLDER IN CODE1" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+    <WordsStyle name="FOLDER IN COMMENT" fgColor="57A64A" bgColor="1E1E1E" fontStyle="0"/>
+
+    <!-- Strings -->
+    <WordsStyle name="DELIMITERS1" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
+    <WordsStyle name="DELIMITERS2" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
+
+    <!-- Brackets -->
+    <WordsStyle name="DELIMITERS3" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+    <WordsStyle name="DELIMITERS4" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+    <WordsStyle name="DELIMITERS5" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+    <WordsStyle name="DELIMITERS6" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+    <WordsStyle name="DELIMITERS7" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+    <WordsStyle name="DELIMITERS8" fgColor="FFD700" bgColor="1E1E1E" fontStyle="1"/>
+</Styles>
     </UserLang>
 </NotepadPlus>
