@@ -1,0 +1,115 @@
+<NotepadPlus>
+    <UserLang name="Solidity" ext="sol" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="no" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="yes" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+
+        <KeywordLists>
+            <Keywords name="Comments">00// 01 02((EOL)) 03/* 04*/</Keywords>
+
+            <Keywords name="Numbers, prefix1">0x</Keywords>
+
+            <Keywords name="Operators1">; , . - * + / = == % &lt; &gt; &lt;= &gt;= !=</Keywords>
+
+            <Keywords name="Folders in code1, open">{</Keywords>
+            <Keywords name="Folders in code1, close">}</Keywords>
+
+            <!-- Structure -->
+            <Keywords name="Keywords1">
+pragma contract library interface abstract import using is error type
+            </Keywords>
+
+            <!-- Flow & functions -->
+            <Keywords name="Keywords2">
+function constructor receive fallback modifier event emit
+while for do break continue if else return
+try catch unchecked new delete assembly
+true false this
+            </Keywords>
+
+            <!-- Visibility & mutability -->
+            <Keywords name="Keywords3">
+internal external pure constant view payable returns
+storage memory calldata public private indexed
+virtual override immutable
+            </Keywords>
+
+            <!-- Types -->
+            <Keywords name="Keywords4">
+bool int int8 int16 int32 int64 int128 int256
+uint uint8 uint16 uint32 uint64 uint128 uint256
+address string
+bytes bytes1 bytes2 bytes4 bytes8 bytes16 bytes32
+mapping struct enum fixed ufixed
+            </Keywords>
+
+            <!-- TODO -->
+            <Keywords name="Keywords6">
+TODO "TO DO" todo "to do"
+            </Keywords>
+
+            <!-- Builtins / globals / crypto -->
+            <Keywords name="Keywords7">
+Transfer push length gas call delegatecall callcode send transfer balance
+msg.sender msg.value msg.data
+tx.origin
+block.timestamp block.number block.chainid block.basefee block.prevrandao
+ecrecover keccak256 ripemd160 sha256 sha3 mulmod addmod
+encodePacked encode encodeWithSelector encodeWithSignature
+abi.encode abi.decode abi.encodePacked abi.encodeWithSelector abi.encodeWithSignature
+assert require revert
+blockhash coinbase difficulty gaslimit number timestamp gasleft data sender sig value
+selfdestruct suicide now
+            </Keywords>
+
+            <!-- Units -->
+            <Keywords name="Keywords8">
+wei gwei ether
+seconds minutes hours days weeks years
+            </Keywords>
+
+            <!-- Delimiters -->
+            <Keywords name="Delimiters">
+00@title 00@dev 00@param 00@return 00@author
+03&quot; 04 05&quot;
+06( 07 08)
+09[ 10 11]
+12{ 13 14}
+            </Keywords>
+        </KeywordLists>
+
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="COMMENTS" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="LINE COMMENTS" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="NUMBERS" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="KEYWORDS1" fgColor="569CD6" bgColor="1E1E1E" fontStyle="1"/>
+            <WordsStyle name="KEYWORDS2" fgColor="C586C0" bgColor="1E1E1E" fontStyle="1"/>
+            <WordsStyle name="KEYWORDS3" fgColor="569CD6" bgColor="1E1E1E" fontStyle="1"/>
+            <WordsStyle name="KEYWORDS4" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
+            <WordsStyle name="KEYWORDS5" fgColor="4EC9B0" bgColor="1E1E1E" fontStyle="1"/>
+
+            <WordsStyle name="KEYWORDS6" fgColor="D7BA7D" bgColor="1E1E1E" fontStyle="1"/>
+            <WordsStyle name="KEYWORDS7" fgColor="DCDCAA" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="KEYWORDS8" fgColor="B5CEA8" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="OPERATORS" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="FOLDER IN CODE1" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="6A9955" bgColor="1E1E1E" fontStyle="0"/>
+
+            <WordsStyle name="DELIMITERS1" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS2" fgColor="CE9178" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS3" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS4" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS5" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS6" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS7" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS8" fgColor="D4D4D4" bgColor="1E1E1E" fontStyle="0"/>
+        </Styles>
+    </UserLang>
+</NotepadPlus>
