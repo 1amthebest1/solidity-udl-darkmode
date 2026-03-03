@@ -5,7 +5,7 @@ Dark-themed **Notepad++ UDL** for Solidity (`.sol`) files. Highlights keywords, 
 ## Install
 
 1. Open **Notepad++ → Language → Define your language… → Import…**
-2. Select `Solidity_DarkMode_Syntax.xml`
+2. Download `solidity.xml` and import it
 3. Restart Notepad++ (optional)
 4. Open a `.sol` file → **Language → Solidity**
 
