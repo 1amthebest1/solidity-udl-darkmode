@@ -1,26 +1,41 @@
 <NotepadPlus>
     <UserLang name="Solidity" ext="sol" udlVersion="2.1">
+
         <Settings>
-            <Global caseIgnored="no" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
-            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="yes" Keywords6="no" Keywords7="no" Keywords8="no" />
+            <Global caseIgnored="no" allowFoldOfComments="yes" foldCompact="no"
+                    forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no"
+                    Keywords4="no" Keywords5="yes" Keywords6="no"
+                    Keywords7="no" Keywords8="no" />
         </Settings>
 
         <KeywordLists>
+
+            <!-- Comments -->
             <Keywords name="Comments">00// 01 02((EOL)) 03/* 04*/</Keywords>
 
+            <!-- Numbers -->
             <Keywords name="Numbers, prefix1">0x</Keywords>
 
-            <Keywords name="Operators1">; , . - * + / = == % &lt; &gt; &lt;= &gt;= !=</Keywords>
+            <!-- Operators -->
+            <Keywords name="Operators1">
++ - * / % = == != &lt; &gt; &lt;= &gt;=
+&& || ! & | ^ ~
++= -= *= /= %=
+&lt;&lt; &gt;&gt;
+; , . :
+            </Keywords>
 
+            <!-- Folding -->
             <Keywords name="Folders in code1, open">{</Keywords>
             <Keywords name="Folders in code1, close">}</Keywords>
 
-            <!-- Structure -->
+            <!-- STRUCTURE -->
             <Keywords name="Keywords1">
 pragma contract library interface abstract import using is error type
             </Keywords>
 
-            <!-- Flow & functions -->
+            <!-- FLOW -->
             <Keywords name="Keywords2">
 function constructor receive fallback modifier event emit
 while for do break continue if else return
@@ -28,112 +43,121 @@ try catch unchecked new delete assembly
 true false this
             </Keywords>
 
-            <!-- Visibility & mutability -->
+            <!-- VISIBILITY -->
             <Keywords name="Keywords3">
 internal external pure constant view payable returns
 storage memory calldata public private indexed
 virtual override immutable
             </Keywords>
 
-            <!-- Types -->
+            <!-- TYPES -->
             <Keywords name="Keywords4">
 bool int int8 int16 int32 int64 int128 int256
 uint uint8 uint16 uint32 uint64 uint128 uint256
-address string
-bytes bytes1 bytes2 bytes4 bytes8 bytes16 bytes32
+address string bytes
+bytes1 bytes2 bytes4 bytes8 bytes16 bytes32
 mapping struct enum fixed ufixed
+            </Keywords>
+
+            <!-- JS + OZ + FOUNDRY -->
+            <Keywords name="Keywords5">
+let const var
+async await
+import export default require module
+class extends constructor
+typeof instanceof
+switch case break
+try catch finally throw
+null undefined
+map filter reduce
+console log Promise
+
+IERC20 ERC20 Ownable SafeERC20
+ReentrancyGuard Pausable
+Test Script Vm
+vm prank startPrank stopPrank deal warp roll
+expectRevert expectEmit assume
             </Keywords>
 
             <!-- TODO -->
             <Keywords name="Keywords6">
-TODO "TO DO" todo "to do"
+TODO FIXME BUG HACK
             </Keywords>
 
-            <!-- Builtins / globals / crypto -->
+            <!-- BUILTINS -->
             <Keywords name="Keywords7">
-Transfer push length gas call delegatecall callcode send transfer balance
 msg.sender msg.value msg.data
 tx.origin
 block.timestamp block.number block.chainid block.basefee block.prevrandao
-ecrecover keccak256 ripemd160 sha256 sha3 mulmod addmod
-encodePacked encode encodeWithSelector encodeWithSignature
-abi.encode abi.decode abi.encodePacked abi.encodeWithSelector abi.encodeWithSignature
+ecrecover keccak256 ripemd160 sha256 sha3
+mulmod addmod
+abi.encode abi.decode abi.encodePacked
+abi.encodeWithSelector abi.encodeWithSignature
 assert require revert
-blockhash coinbase difficulty gaslimit number timestamp gasleft data sender sig value
+blockhash coinbase difficulty gaslimit gasleft
 selfdestruct suicide now
             </Keywords>
 
-            <!-- Units -->
+            <!-- UNITS -->
             <Keywords name="Keywords8">
 wei gwei ether
 seconds minutes hours days weeks years
             </Keywords>
 
-            <!-- Delimiters -->
+            <!-- ONLY STRING DELIMITERS -->
             <Keywords name="Delimiters">
-00@title 00@dev 00@param 00@return 00@author
 03&quot; 04 05&quot;
-06( 07 08)
-09[ 10 11]
-12{ 13 14}
             </Keywords>
+
         </KeywordLists>
 
-       <Styles>
+        <Styles>
 
-    <!-- Default -->
-    <WordsStyle name="DEFAULT" fgColor="E6E6E6" bgColor="000000" fontStyle="0"/>
+            <WordsStyle name="DEFAULT" fgColor="E6E6E6" bgColor="000000" fontStyle="0"/>
 
-    <!-- Comments (soft gray-green, less loud) -->
-    <WordsStyle name="COMMENTS" fgColor="7F9F7F" bgColor="000000" fontStyle="2"/>
-    <WordsStyle name="LINE COMMENTS" fgColor="7F9F7F" bgColor="000000" fontStyle="2"/>
+            <!-- Comments -->
+            <WordsStyle name="COMMENTS" fgColor="6A9955" bgColor="000000" fontStyle="2"/>
+            <WordsStyle name="LINE COMMENTS" fgColor="6A9955" bgColor="000000" fontStyle="2"/>
 
-    <!-- Numbers -->
-    <WordsStyle name="NUMBERS" fgColor="B5CEA8" bgColor="000000" fontStyle="1"/>
+            <!-- Numbers -->
+            <WordsStyle name="NUMBERS" fgColor="B5CEA8" bgColor="000000" fontStyle="1"/>
 
-    <!-- Solidity Structure -->
-    <WordsStyle name="KEYWORDS1" fgColor="BB86FC" bgColor="000000" fontStyle="1"/>
+            <!-- Structure -->
+            <WordsStyle name="KEYWORDS1" fgColor="C586C0" bgColor="000000" fontStyle="1"/>
 
-    <!-- Flow / function -->
-    <WordsStyle name="KEYWORDS2" fgColor="4FC1FF" bgColor="000000" fontStyle="1"/>
+            <!-- Flow -->
+            <WordsStyle name="KEYWORDS2" fgColor="4FC1FF" bgColor="000000" fontStyle="1"/>
 
-    <!-- Visibility / mutability -->
-    <WordsStyle name="KEYWORDS3" fgColor="FFB454" bgColor="000000" fontStyle="1"/>
+            <!-- Visibility -->
+            <WordsStyle name="KEYWORDS3" fgColor="FFB454" bgColor="000000" fontStyle="1"/>
 
-    <!-- Types -->
-    <WordsStyle name="KEYWORDS4" fgColor="4EC9B0" bgColor="000000" fontStyle="1"/>
+            <!-- Types -->
+            <WordsStyle name="KEYWORDS4" fgColor="4EC9B0" bgColor="000000" fontStyle="1"/>
 
-    <!-- Custom -->
-    <WordsStyle name="KEYWORDS5" fgColor="9CDCFE" bgColor="000000" fontStyle="0"/>
+            <!-- JS / OZ / Foundry -->
+            <WordsStyle name="KEYWORDS5" fgColor="9CDCFE" bgColor="000000" fontStyle="0"/>
 
-    <!-- TODO -->
-    <WordsStyle name="KEYWORDS6" fgColor="FF5370" bgColor="000000" fontStyle="1"/>
+            <!-- TODO -->
+            <WordsStyle name="KEYWORDS6" fgColor="FF5370" bgColor="000000" fontStyle="1"/>
 
-    <!-- Builtins -->
-    <WordsStyle name="KEYWORDS7" fgColor="F2D16B" bgColor="000000" fontStyle="1"/>
+            <!-- Builtins -->
+            <WordsStyle name="KEYWORDS7" fgColor="F2D16B" bgColor="000000" fontStyle="1"/>
 
-    <!-- Units -->
-    <WordsStyle name="KEYWORDS8" fgColor="C3E88D" bgColor="000000" fontStyle="0"/>
+            <!-- Units -->
+            <WordsStyle name="KEYWORDS8" fgColor="C3E88D" bgColor="000000" fontStyle="0"/>
 
-    <!-- Operators -->
-    <WordsStyle name="OPERATORS" fgColor="FFFFFF" bgColor="000000" fontStyle="0"/>
+            <!-- Operators -->
+            <WordsStyle name="OPERATORS" fgColor="FFFFFF" bgColor="000000" fontStyle="0"/>
 
-    <!-- Folding -->
-    <WordsStyle name="FOLDER IN CODE1" fgColor="AAAAAA" bgColor="000000" fontStyle="0"/>
-    <WordsStyle name="FOLDER IN COMMENT" fgColor="7F9F7F" bgColor="000000" fontStyle="0"/>
+            <!-- Folding -->
+            <WordsStyle name="FOLDER IN CODE1" fgColor="AAAAAA" bgColor="000000" fontStyle="0"/>
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="6A9955" bgColor="000000" fontStyle="0"/>
 
-    <!-- Strings -->
-    <WordsStyle name="DELIMITERS1" fgColor="CE9178" bgColor="000000" fontStyle="0"/>
-    <WordsStyle name="DELIMITERS2" fgColor="CE9178" bgColor="000000" fontStyle="0"/>
+            <!-- Strings -->
+            <WordsStyle name="DELIMITERS1" fgColor="CE9178" bgColor="000000" fontStyle="0"/>
+            <WordsStyle name="DELIMITERS2" fgColor="CE9178" bgColor="000000" fontStyle="0"/>
 
-    <!-- Brackets -->
-    <WordsStyle name="DELIMITERS3" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
-    <WordsStyle name="DELIMITERS4" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
-    <WordsStyle name="DELIMITERS5" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
-    <WordsStyle name="DELIMITERS6" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
-    <WordsStyle name="DELIMITERS7" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
-    <WordsStyle name="DELIMITERS8" fgColor="FFD700" bgColor="000000" fontStyle="1"/>
+        </Styles>
 
-</Styles>
     </UserLang>
 </NotepadPlus>
